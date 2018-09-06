@@ -25,20 +25,32 @@
         }
         </style>
 
+
+        <h1>Content: Standalone Widget in one file</h1>
+
         <div data-widget-host="content" class="preview">
-            a
+            widget "content" not loaded
             <script type="text/props">{ "color": "blue"}</script>
         </div>
 
 
         <br>
         <hr>
+        <hr>
+        <hr>
+        <h1>Search: Two Widgets in one file</h1>
 
 
 
         <div data-widget-host="search" class="preview">
-            b
-            <script type="text/props">{ "color": "red"}</script>
+            widget "search" not loaded
+            <script type="text/props">{ "color": "green"}</script>
+        </div>
+
+
+        <div data-widget-host="button" class="preview">
+            widget "searchbutton" not loaded
+            <script type="text/props">{ "alertMessage": "searchme", "text": "i'm a button"}</script>
         </div>
 
 
