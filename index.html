@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+
+        <style>
+        .preview {
+            width: 100%;
+            max-width: 1100px;
+            margin: 80px auto;
+            border: 1px dashed rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        .preview::before {
+            content: 'WIDGET PREVIEW';
+            position: absolute;
+            display: block;
+            top: -18px;
+            font-size: 11px;
+            color: rgba(0, 0, 0, 0.5);
+        }
+        </style>
+
+        <div data-widget-host="content" class="preview">
+            a
+            <script type="text/props">{ "color": "blue"}</script>
+        </div>
+
+
+        <br>
+        <hr>
+
+
+
+        <div data-widget-host="search" class="preview">
+            b
+            <script type="text/props">{ "color": "red"}</script>
+        </div>
+
+
+
+        <script async src="search/build/bundle.js"></script>
+        <script async src="content/build/bundle.js"></script>
+    </body>
+</html>
